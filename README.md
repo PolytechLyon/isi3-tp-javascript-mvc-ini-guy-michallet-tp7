@@ -4,9 +4,9 @@
 
 > Ne copiez pas le code de votre voisin, ça se voit.
 
-Nom/Prénom: `.......`
+Nom/Prénom: `GUY Titouan / MICHALLET Anthony`
 
-Lien du codesandbox: `.......`
+Lien du codesandbox: `https://codesandbox.io/s/github/PolytechLyon/isi3-tp-javascript-mvc-ini-guy-michallet-tp7`
 
 > Pour générer un codesandbox associé à votre code, [suivre cette doc](https://codesandbox.io/docs/importing#import-from-github).
 
@@ -27,14 +27,16 @@ Il a été inventé par [John Horton Conway](https://fr.wikipedia.org/wiki/John_
 
 1. Expliquer le design pattern MVC à l'aide d'un schéma à insérer directement ici.
 Utiliser un outils comme Dia pour le représenter. Je veux **votre** schéma, pas un de ceux qu'on peut trouver sur le net.
+![Diagramme MVC](MVC.png)
 
 2. Expliquer ce pattern en complétant ce texte.
 
-Le pattern MVC, vise à découper le `.......`, de la `.......` et du `.......` afin de rendre le code plus `.......`.
-Les responsabilités ne sont alors plus `.......`.
-On peut ainsi changer l'aspect visuel de son application sans pour autant impacter le `.......`.
+Le pattern MVC, vise à découper le `traitement`, de la `vue` et du `métier` afin de rendre le code plus `clair`.
+Les responsabilités ne sont alors plus `centralisées`.
+On peut ainsi changer l'aspect visuel de son application sans pour autant impacter le `code métier`.
 
 3. Expliquer dans quels cas on doit privilégier le pattern MVC.
+Le pattern MVC doit être privilégié pour les applications Web pour faciliter la séparation front-end et back-end afin de pouvoir travailler sur les deux parties indépendamment
 
 ## À faire (obligatoire)
 
@@ -50,8 +52,8 @@ Cela relève du design pattern Observer/Observable.
 
 1. Expliquer votre implémentation:
 
-L'usage d'un callback permet ici de `.......` afin de dire à la _View_ de se redessiner.
-L'objet _Model_ n'a pas de lien avec `.......` pourtant grâce à la `.......` il peut notifier la `.......`.
+L'usage d'un callback permet ici de `notifier` afin de dire à la _View_ de se redessiner.
+L'objet _Model_ n'a pas de lien avec `l'objet View` pourtant grâce à la `fonction 'updated'` il peut notifier la `Vue`.
 
 2. Insérer ici un UML montrant le pattern Observer/Observable lié aux objets de ce TP.
 
